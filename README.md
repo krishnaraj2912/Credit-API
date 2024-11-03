@@ -77,10 +77,6 @@ Before you begin, ensure you have the following installed:
 
 ### Option 2: Run Tests via Python Script
 
-```bash
-cd Credit/test
-```
-
 1. **Start the FastAPI App**:
    - Run the following command:
      ```bash
@@ -88,6 +84,10 @@ cd Credit/test
      ```
 
 2. **Run the Test Script**:
+   - Navigate to the `test` directory:
+     ```bash
+     cd Credit/test
+     ```
    - Execute the test script:
      ```bash
      python test.py
