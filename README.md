@@ -84,11 +84,23 @@ Before you begin, ensure you have the following installed:
      ```
 
 2. **Run the Test Script**:
-   - Navigate to the `test` directory:
+Open new terminal
+   - On Windows:
+
+     ```bash
+     .\env\Scripts\activate
+     ```
+
+   - On Unix or macOS:
+
+     ```bash
+     source env/bin/activate
+     ```
+    Navigate to the `test` directory:
      ```bash
      cd Credit/test
      ```
-   - Execute the test script:
+   Execute the test script:
      ```bash
      python test.py
      ```
