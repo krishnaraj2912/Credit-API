@@ -72,7 +72,7 @@ Before you begin, ensure you have the following installed:
 ### Option 1: Import into Postman
 
 1. **Open Postman** and click **Import**.
-2. Select the `Credit_API.postman_collection.json` file from the project root.
+2. Select the `Credit_API.postman_collection.json` file from the test folder.
 3. Click on the imported collection and hit **Run** to execute the requests.
 
 ### Option 2: Run Tests via Python Script
