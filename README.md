@@ -17,8 +17,8 @@ Before you begin, ensure you have the following installed:
    Clone the repository to your local machine using the following command:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/krishnaraj2912/Credit-API.git
+   cd Credit-API
    ```
 
 2. **Run the Setup Script**

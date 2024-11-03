@@ -35,9 +35,6 @@ class CreditsRepo:
                 total_turnover = sum(cur_turnover.turnover for cur_turnover in turnover)
 
             total_credit = total_turnover - total_unpaid_loans
-            # print("----------------------------------------------------")
-            # print(total_credit, total_turnover, total_unpaid_loans)
-            # print("----------------------------------------------------")
 
             if total_credit and turnover:
                 cur_cred = Credits(id=str(uuid4()), company_id=company_id, total_credit=total_credit, entry_date=datetime.now().date())

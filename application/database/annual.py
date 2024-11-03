@@ -10,22 +10,10 @@ class AnnualRepo:
     async def add_annual(self, db: AsyncSession, annual: Annual):
         try:
             cur_annual = Annual(**annual.model_dump())
-            print("----------------------------------------------------")
-            print(annual.company_id)
-            print("----------------------------------------------------")
-            print("----------------------------------------------------")
-            print(cur_annual.company_id, cur_annual.profit, cur_annual.turnover, cur_annual.fiscal_year, cur_annual.reported_date)
-            print("----------------------------------------------------")
             db.add(cur_annual)
             await db.commit()
             await db.refresh(cur_annual)
-            print("----------------------------------------------------")
-            print("Done")
-            print("----------------------------------------------------")
             await self.credits_db.update_credit(db, annual.company_id)
-            print("----------------------------------------------------")
-            print("Done")
-            print("----------------------------------------------------")
             return cur_annual
         except Exception as e:
             await db.rollback()

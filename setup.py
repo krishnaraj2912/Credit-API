@@ -41,9 +41,9 @@ def create_database(db_name):
     try:
         print("Creating database...")
         if os.name == "nt":
-            subprocess.check_call(["psql", "-U", "postgres", "-c", f'CREATE DATABASE "{db_name}";'])
+            subprocess.check_call(["psql", "-U", "postgres", "-c", f'CREATE DATABASE "{db_name}"'])
         else:
-            subprocess.check_call(["sudo", "-u", "postgres", "psql", "-c", f'CREATE DATABASE "{db_name}";'])
+            subprocess.check_call(["sudo", "-u", "postgres", "psql", "-c", f'CREATE DATABASE "{db_name}"'])
     except subprocess.CalledProcessError as e:
         print("\n\n")
         print("------------------------------------------------------------------")
